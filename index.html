@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>X and O game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="playerInfo">
+      <p id="playerOne">Player One: <b>X</b> <span id="p1S">0</span></p>
+      <p id="playerTwo">Player Two: <b>O</b> <span id="p2S">0</span></p>
+    </div>
+    <div id="container">
+      <div class="col">
+        <div id="one" class="element" onclick="draw(this)"></div>
+        <div id="two" class="element" onclick="draw(this)"></div>
+        <div id="three" class="element" onclick="draw(this)"></div>
+      </div>
+      
+      <div class="col">
+        <div id="four" class="element" onclick="draw(this)"></div>
+        <div id="five" class="element" onclick="draw(this)"></div>
+        <div id="six" class="element" onclick="draw(this)"></div>
+      </div>
+      
+      <div class="col">
+        <div id="seven" class="element" onclick="draw(this)"></div>
+        <div id="eight" class="element" onclick="draw(this)"></div>
+        <div id="nine" class="element" onclick="draw(this)"></div>
+      </div>
+    </div>
+    <div id="button">
+      <button id="playAgainBtn" onclick="restart()" id="btn">PLAY AGAIN</button>
+      <button id="restartScoreBtn" onclick="restartScore()">RESTART SCORE</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
